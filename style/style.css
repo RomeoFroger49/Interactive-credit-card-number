@@ -1,0 +1,159 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size:90%;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:hsl(278, 68%,11%);
+}
+
+body{
+    width: 100vw;
+    height:100vh;    
+}
+
+.color-background{
+    height:100vh;
+    width: 35%;
+    position:absolute;
+    background:linear-gradient(hsl(278, 68%, 11%),hsl(278, 94%, 30%),hsl(278, 68%, 11%));
+}
+
+main{
+    width: 100% ;
+    height:100% ;
+    display:flex;
+    position:relative;
+}
+
+section{
+    width: 80% ;
+    height:60% ;
+    margin:auto;
+    display:flex;
+}
+
+.cards{
+    display:flex;
+    flex-flow:column;
+    width: 50% ;
+    min-width: 250px;
+    position:relative,
+}
+
+.card{
+    border-radius:8px;
+    margin:1em;
+    height:20vw;
+    min-height:10em;
+    width:70%;
+    min-width: 250px;
+}
+
+.recto{
+    
+    background:linear-gradient(45deg, blue, red);
+    margin-right:12vw
+}
+.verso{
+    background: hsl(279, 6%, 70%);
+    margin-left:10vw
+
+}
+
+.formulaire{
+    width: 50% ;
+    height:100%;
+    padding:5em;;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-between;
+}
+
+.ligne{
+    width:100%;
+    height:15%;
+}
+
+.third{
+    display:flex;
+    flex-flow:row nowrap;
+    width:100%
+}
+
+.date{
+    width:50%;
+}
+
+.date-i{
+    display:flex;
+    justify-content:space-evenly;
+    height:100%;
+}
+
+input{
+    border : solid gray;
+    border-radius:4px;
+    height:80%;
+    width:95%;
+    margin:0.5rem;
+}
+
+label{
+    margin:0.5rem;
+}
+
+button{
+    color:white;
+    text-transform:normal;
+    width:100%;
+    height:13%;
+    background:hsl(278, 68%, 21%);
+    border-radius:8px;
+}
+
+
+@media screen and (max-width:800px){
+
+    *{
+        font-size:calc(5px + 1.5vw);
+    }
+    
+    .color-background{
+        width:100%;
+        height:30%
+    }
+    .cards{
+        height:40%;
+        display:flex;
+        flex-flow:column-reverse
+    }
+
+    .recto{
+        margin:0;
+        
+    }
+
+    .verso{
+        margin:0;
+    
+    }
+
+    section{
+        height:100%;
+        width:100%;
+        flex-flow:column;
+        align-items:center;
+    }
+
+    .formulaire{
+        height:60%;
+        width:100%;
+        padding:2em;
+        margin:0;
+    }
+
+}
