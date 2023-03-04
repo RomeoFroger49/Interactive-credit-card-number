@@ -224,7 +224,8 @@ button{
     }
 
     .card{
-        max-width:250px;
+        width:95%;
+        max-width:290px;
         height:160px;
     }
 
