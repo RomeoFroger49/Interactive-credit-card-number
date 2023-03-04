@@ -50,6 +50,7 @@ section{
     height:20vw;
     width:80%;
     max-width:430PX;
+    box-shadow: 0 0 10px black;
 }
 
 .recto{
