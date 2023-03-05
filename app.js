@@ -13,19 +13,19 @@ document.getElementById('chiffre-e').myNumber = 16;
 document.getElementById('chiffre-e').myP = document.getElementById("chiffre-alert");
 
 
-(document.getElementById('year-e')).addEventListener("input", replaceChiffre);
-(document.getElementById('year-e')).myPara = document.getElementById('year');
-(document.getElementById('year-e')).myNumber = 2;
+document.getElementById('year-e').addEventListener("input", replaceChiffre);
+document.getElementById('year-e').myPara = document.getElementById('year');
+document.getElementById('year-e').myNumber = 2;
 document.getElementById('year-e').myP = document.getElementById("year-alert");
 
-(document.getElementById('month-e')).addEventListener("input", replaceChiffre);
-(document.getElementById('month-e')).myPara = document.getElementById('month');
-(document.getElementById('month-e')).myNumber = 2;
+document.getElementById('month-e').addEventListener("input", replaceChiffre);
+document.getElementById('month-e').myPara = document.getElementById('month');
+document.getElementById('month-e').myNumber = 2;
 document.getElementById('month-e').myP = document.getElementById("year-alert");
 
-(document.getElementById('cvc-e')).addEventListener("input", replaceChiffre);
-(document.getElementById('cvc-e')).myPara = document.getElementById('cvc');
-(document.getElementById('cvc-e')).myNumber = 3;
+document.getElementById('cvc-e').addEventListener("input", replaceChiffre);
+document.getElementById('cvc-e').myPara = document.getElementById('cvc');
+document.getElementById('cvc-e').myNumber = 3;
 document.getElementById('cvc-e').myP = document.getElementById("year-alert");
 
 
