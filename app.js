@@ -31,7 +31,7 @@ document.getElementById('cvc-e').myP = document.getElementById("year-alert");
 
 
 function replaceChiffre(e){
-    const pattern =/[a-zA-Z]/g;
+    const pattern =/[^1-9]/g;
     if(pattern.test(e.target.value) || e.target.value.length > e.target.myNumber){
         e.target.style.border = "solid red";
         e.target.style.color = "red";
