@@ -62,7 +62,7 @@
         <div class="second ligne">
           <label for="">Card Number</label>
           <input id="chiffre-e" placeholder="e.g. 1234 5678 9123 0000"></input>
-          <p id="alert-message">Wrong format, numbers only</p>
+          <p class="alert-message" id="chiffre-alert" >Wrong format, numbers only</p>
         </div>
 
         <div class="third ligne">
@@ -75,14 +75,13 @@
               <input id="month-e" placeholder=" MM" ></input>
               <input id="year-e" placeholder=" YY"></input>
             </div>
-
           </div>
 
           <div class="CVC">
             <label >CVC</label>
             <input id="cvc-e" placeholder="e.g. 123"></input>
           </div>
-
+          <p class="alert-message" id="year-alert" >Wrong format, numbers only</p>
         </div>
 
         <button class="confirm-button">Confirm</button>
