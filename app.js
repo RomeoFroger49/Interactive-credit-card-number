@@ -45,3 +45,8 @@ function replaceChiffre(e){
     }
     
 }
+
+function checkRemplie(){
+    const input = document.querySelectorAll("input");
+    input.forEach(input.style.border = "solid green")
+}
